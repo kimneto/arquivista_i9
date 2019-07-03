@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:path/path.dart' as p;
-import 'package:dart/model.dart';
+import 'model.dart';
 
 void main() {
   
@@ -24,10 +24,15 @@ void main() {
   
   //PASTA DESTINO
   final pasta = Directory("c:\\alvo\\");
+
   print("-----------------*------------------");
   List contents = pasta.listSync();
   for (var fileOrDir in contents) {
     if (fileOrDir is File) {
+
+      novoArquivo["nome"] = p.basename(fileOrDir.path);
+
+      
      
       if (fileOrDir.path.contains('@') == true){
         print("Documentos Possivelmente Assinados Detectado");
@@ -47,6 +52,9 @@ void main() {
     }
   }
 }
+
+
+
 //Funcao move arquivo
 Future<File> moveArquivo(File sourceFile, String newPath) async {
   try {
