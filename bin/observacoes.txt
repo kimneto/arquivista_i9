@@ -1,0 +1,48 @@
+
+  //PASTA DESTINO
+/*
+  for (var fileOrDir in contents) {
+    if (fileOrDir is File) {
+      if (arqePastas.path.contains('@') == true) {
+        print("Documentos Possivelmente Assinados Detectado");
+        print(arqePastas.path);
+
+
+        moveArquivo(fileOrDir, "c:\\alvo\\dest\\" + p.basename(fileOrDir.path));
+        var levajunto = (fileOrDir.path).replaceAll(RegExp('@'), '');
+
+        for (var fileOrDir2 in contents) {
+          if (fileOrDir2.path.contains(levajunto) == true) {
+            moveArquivo(
+                fileOrDir2, "c:\\alvo\\dest\\" + p.basename(fileOrDir2.path));
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+ for (var fileOrDir in contents) {
+    if (fileOrDir is File) {
+      if (fileOrDir.path.contains('@') == true) {
+        print("Documentos Possivelmente Assinados Detectado");
+        print(fileOrDir.path);
+
+        moveArquivo(fileOrDir, "c:\\alvo\\dest\\" + p.basename(fileOrDir.path));
+        var levajunto = (fileOrDir.path).replaceAll(RegExp('@'), '');
+
+        for (var fileOrDir2 in contents) {
+          if (fileOrDir2.path.contains(levajunto) == true) {
+            moveArquivo(
+                fileOrDir2, "c:\\alvo\\dest\\" + p.basename(fileOrDir2.path));
+          }
+        }
+      }
+    }
+  }
+}
+//Funcao move arquivo
+*/
+
